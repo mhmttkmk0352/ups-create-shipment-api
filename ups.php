@@ -2,14 +2,14 @@
 set_time_limit(0);
  class Ups {
     public $url = "http://ws.ups.com.tr/wsCreateShipment/wsCreateShipment.asmx";
-    public $customerNumber = "89E44F";
-    public $username = "Yv6Mm8ShDEe47aWnB0A5";
-    public $password = "jStZjeNM2aZUN2utTgtJ";
+    public $customerNumber = "89E***";
+    public $username = "Yv6M****************";
+    public $password = "jStZ****************";
     public $SessionID = "";
-    public $ShipperName = "MISSHA";
-    public $ShipperAddress = "Batısitesi mah. Tahsin Kahraman Cad. No: 105-107 Gersan / Batıkent /ANKARA";
-    public $ShipperCityCode = 6;
-    public $ShipperAreaCode = 1528;
+    public $ShipperName = "XXXX Company";
+    public $ShipperAddress = "Yenimahalle/ Ankara";
+    public $ShipperCityCode = 6;//city code
+    public $ShipperAreaCode = 1528; //area code
 
     
     public function getir( $xml  ){
@@ -129,9 +129,9 @@ $ups = new Ups;
 
 $musteri = array(
   "ad_soyad"=>"Mehmet TOKMAK",
-  "adres"=>"Ergazi Mahallesi Batı Bulvar",
-  "sehir_kodu"=>6,
-  "bolge_kodu"=>1528,
+  "adres"=>"Ergazi Mahallesi XXX Bulvarı No:1",
+  "sehir_kodu"=>6,    //city code
+  "bolge_kodu"=>1528, //area code
   "hizmet_turu"=>3,   // 1) Express 09:00   |   3) STANDART           |   4) Express 10:30   |   5) Express 12:00    |     6) Express Saver
   "odeme_tipi"=>2,    // 1) Alıcı Ödemeli   |   2) Gönderen Ödemeli   |   4) Üçüncü Şahıs Ödemeli
   "paket_turu"=>"K",  // D) Mektup          |   K) Paket
